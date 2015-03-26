@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0BE9B9B9-F887-47DC-BD06-B03B61A715E4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TableDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEA20CD0C2C7EE909C93DF8C1A059F7F579EEC58</key>
+		<string>https://github.com/theletterc/GA-Classwork.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TableDemo/TableDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEA20CD0C2C7EE909C93DF8C1A059F7F579EEC58</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/theletterc/GA-Classwork.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEA20CD0C2C7EE909C93DF8C1A059F7F579EEC58</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEA20CD0C2C7EE909C93DF8C1A059F7F579EEC58</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Classwork</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6uG-oQ-59y">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RedditApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gW4-x4-Xip">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="redditCell" textLabel="Ulv-gZ-pUq" detailTextLabel="vSq-Y0-Hg1" style="IBUITableViewCellStyleSubtitle" id="qeq-Th-Mws">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qeq-Th-Mws" id="u6p-wr-29j">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ulv-gZ-pUq">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vSq-Y0-Hg1">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="CkU-QI-7Ji"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="83c-r4-2CZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gW4-x4-Xip" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3VS-Bw-BSd"/>
+                            <constraint firstItem="gW4-x4-Xip" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8hB-NG-9PY"/>
+                            <constraint firstAttribute="trailing" secondItem="gW4-x4-Xip" secondAttribute="trailing" id="8r6-XC-YzC"/>
+                            <constraint firstItem="gW4-x4-Xip" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wq0-an-dQn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LiI-VH-ngF"/>
+                    <connections>
+                        <outlet property="tableView" destination="gW4-x4-Xip" id="SZb-L8-PeY"/>
+                        <segue destination="yqh-Vg-etc" kind="show" identifier="navToWebView" id="7db-vp-P2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192" y="337"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="9tn-Tt-s15">
+            <objects>
+                <viewController id="yqh-Vg-etc" customClass="WebViewController" customModule="RedditApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fR2-tn-EHy"/>
+                        <viewControllerLayoutGuide type="bottom" id="as1-8q-E0p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wdj-HR-ukp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eq4-Ju-u5n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eq4-Ju-u5n" secondAttribute="trailing" id="3NL-XG-QQF"/>
+                            <constraint firstItem="eq4-Ju-u5n" firstAttribute="leading" secondItem="wdj-HR-ukp" secondAttribute="leading" id="Toi-pS-0PR"/>
+                            <constraint firstItem="eq4-Ju-u5n" firstAttribute="top" secondItem="wdj-HR-ukp" secondAttribute="topMargin" id="VUg-U1-10o"/>
+                            <constraint firstItem="eq4-Ju-u5n" firstAttribute="bottom" secondItem="as1-8q-E0p" secondAttribute="top" id="rKb-al-E7v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="eq4-Ju-u5n" id="QVx-7J-WwL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Al-II-90U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T12-NW-EMj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6uG-oQ-59y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vmt-pF-8Ej">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oUV-Py-Dbf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZN-uf-HUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493" y="337"/>
+        </scene>
+    </scenes>
+</document>
